@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/javascript/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input type ="text" value="0" id="display-result">
+        </div>
+        <div class="table">
+            <table>
+
+            <tr id="firstrow">
+                <th><button id="firstrowbutton"  onclick="Clear()">C</button></th>
+                <th><button id="firstrowbutton" onclick="backspace()">MC</button></th>
+                <th><button id="firstrowbutton" onclick="operators('%')">%</button></th>
+                <th><button id="firstrowbutton" onclick="operators('/')">/</button></th>
+            </tr>
+            <tr>
+                <th><button id="number"  onclick="Value(7)">7</button></th>
+                <th><button id="number" onclick="Value(8)">8</button></th>
+                <th><button id="number" onclick="Value(9)">9</button></th>
+                <th><button id="operators" onclick="operators('*')">*</button></th>
+            </tr>
+            <tr>
+                <th><button id="number" onclick="Value(4)">4</button></th>
+                <th><button id="number" onclick="Value(5)">5</button></th>
+                <th><button id="number" onclick="Value(6)">6</button></th>
+                <th><button id="operators" onclick="operators('-')">-</button></th>
+            </tr>
+            <tr>
+                <th><button id="number" onclick="Value(1)">1</button></th>
+                <th><button id="number" onclick="Value(2)">2</button></th>
+                <th><button id="number" onclick="Value(3)">3</button></th>
+                <th><button id="operators" onclick="operators('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button id="number" onclick="Value('00')">00</button></th>
+                <th><button id="number" onclick="Value(0)">0</button></th>
+                <th><button id="number" onclick="Value('.')">.</button></th>
+                <th><button id="equalsto" onclick="Calculate()">=</button></th>
+            </tr>
+        </table>
+    </div>
+    </div>
+<script src="../js/script.js" ></script>
+</body>
+
+
+</html>

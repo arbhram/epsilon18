@@ -1,0 +1,109 @@
+*{
+    padding:4px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+     height:100vh;
+}
+.container{
+    margin:10px auto;
+    width:350px;
+    height:550px;
+    border:1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+
+}
+.display{
+    width:345px;
+    height:200px;
+    margin:10px auto;
+    border-bottom: 1px solid rgb(190, 190, 190);
+
+}
+.display input{
+    margin:0px auto;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    border:none;
+    font-size: 30px;
+    text-align: right;
+}
+.display input:focus,
+.display input:valid{
+    border: none;
+}
+
+.table{
+width:350px;
+height:400px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin:0px auto;
+gap:10px;
+padding:10px;
+}
+
+
+table tr button#firstrowbutton,
+table tr button#operators{
+    width:60px;
+    height:60px;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    font-weight:500;
+    border:none;
+    border-radius:60px;
+    cursor: pointer;
+    z-index:2;
+    text-align: center;
+    font-size: 30px;
+}
+table tr button#firstrowbutton:hover,
+table tr button#operators:hover{
+    background-color: rgb(255, 153, 0);
+}
+table tr button#number{
+    width:60px;
+    height:60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px grey;
+    color: black;
+    font-size:30px;
+    font-weight:500;
+    border:none;
+    border-radius:60px;
+    cursor:pointer;
+    z-index:2;
+}
+table tr button#number:hover{
+    /* background-color: rgb(107, 106, 106); */
+    z-index: 3;
+    box-shadow: 8px 8px 5px grey;
+}
+table tr button#equalsto{
+    width:60px;
+    height:60px;
+    background-color: orange;
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    font-weight:500;
+    border:none;
+    border-radius:60px;
+    cursor: pointer;
+    z-index:2;
+}
+table tr button#equalsto:hover{
+    background-color: rgb(255, 128, 0);
+}
