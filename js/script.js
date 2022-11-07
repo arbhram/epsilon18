@@ -12,7 +12,6 @@ function Value(reciever){
         ending+= reciever;
         data.value+=reciever;
     }
-    console.log(starting,ending);   
 }
 function operators(bodmas){
     Opertor=bodmas;
@@ -44,9 +43,7 @@ starting = starting.slice(0,index);
         data.value=starting+Opertor+ending;
     }
 
-}
-    
-
+}    
 function Calculate(){
     let a = Number(starting);
     let b = Number(ending);
@@ -83,9 +80,18 @@ function Calculate(){
             ending='';
             break;
 
+        case '%':
+            result = (a/100)*b;
+            data.value= result;
+            starting=result
+            Opertor='';
+            ending='';
+            break;
+
     }
-    
 }
+    
+
 
 
 
